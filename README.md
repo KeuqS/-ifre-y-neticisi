@@ -1,21 +1,25 @@
 # 🔐 Aykut Güney - Şifre Yöneticisi
 
-Bu proje, kendi kişisel şifrelerinizi güvenli bir şekilde saklamanızı sağlayan PHP tabanlı bir şifre yöneticisidir.  
-Proje `aykutguney.fun/pw` dizininde yayınlanmak üzere yapılandırılmıştır.
+Bu proje, PHP tabanlı güvenli ve basit bir **kişisel şifre yöneticisi** uygulamasıdır.  
+📱 Mobil uyumlu, 🛡️ güvenli, 🌑 karanlık temalı, 💾 offline çalışabilen PWA desteğiyle birlikte gelir.
 
-## Özellikler
-- Giriş / Kayıt sistemi
-- Ana parola koruması
-- Şifre ekle, düzenle, sil
-- Şifre oluşturucu
-- JSON / CSV dışa aktarma
-- Mobil uygulama gibi çalışma (PWA)
+---
 
-## Kurulum
-1. Tüm dosyaları sunucunuzda `/pw` dizinine yerleştirin
-2. Veritabanınızı yapılandırın
-3. `config.php` içindeki `SECRET_KEY`, `MASTER_PASSWORD` gibi alanları güncelleyin
-4. Mobil cihazdan ziyaret ederek “Ana Ekrana Ekle” deneyimini kullanın
+## 🚀 Özellikler
 
-## Lisans
-MIT Lisansı (dilersen değiştirebiliriz)
+- ✅ Giriş & Kayıt Sistemi (kullanıcı doğrulama)
+- 🔐 Ana Parola Katmanı (çift aşamalı koruma)
+- 🔏 AES-256 ile Şifreleme (veritabanına şifreli kayıt)
+- ✏️ Şifre ekleme, düzenleme, silme
+- 🔍 Arama / filtreleme
+- 🧪 Şifre oluşturucu (güçlü parola üretici)
+- 📤 CSV & JSON dışa aktarma
+- 📱 PWA: Mobilde ana ekrana eklenebilir uygulama
+- 🌑 Karanlık tema & mobil uyumlu responsive arayüz
+- 🧩 .htaccess ve robots.txt ile güvenlik & SEO ayarları
+
+---
+
+## 🛠️ Kurulum
+
+1. Projeyi `pw` dizinine yerleştirin:
