@@ -4,13 +4,18 @@ AddDefaultCharset UTF-8
 # PHP hatalarını gizle
 php_flag display_errors Off
 
-# Erişimi kısıtla
+# HTTPS yönlendirmesi
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+
+# config.php erişimini engelle
 <FilesMatch "config\.php">
     Order allow,deny
     Deny from all
 </FilesMatch>
 
-# .htaccess erişimini engelle
+# .htaccess dosyasını gizle
 <Files .htaccess>
     Order allow,deny
     Deny from all
