@@ -1,0 +1,17 @@
+# UTF-8 karakter seti
+AddDefaultCharset UTF-8
+
+# PHP hatalarını gizle
+php_flag display_errors Off
+
+# Erişimi kısıtla
+<FilesMatch "config\.php">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# .htaccess erişimini engelle
+<Files .htaccess>
+    Order allow,deny
+    Deny from all
+</Files>
